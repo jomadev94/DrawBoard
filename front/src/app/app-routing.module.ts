@@ -5,11 +5,10 @@ import { RoomComponent } from './modules/home/components/room/room.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component:HomeComponent
+    path:'',component:HomeComponent
   },
   {
-    path:':room',
+    path:':room', data:{room:"default"},
     component:RoomComponent
   }
 ];

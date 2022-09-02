@@ -1,2 +1,8 @@
-<p>Chat de {{room | titlecase}}</p>
+<header class="header">
+    <h2>Pizarra de {{room | titlecase}}</h2>
+    <form [formGroup]="form" (submit)="goTo()">
+        <input formControlName="name" type="text" placeholder="Nombre de la sala...">
+        <input type="submit" value="Ingresar" [disabled]="form.invalid && (form.dirty || form.untouched)">
+    </form>
+</header>
 <app-draw></app-draw>

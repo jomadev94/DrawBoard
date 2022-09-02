@@ -40,6 +40,18 @@ export class DrawComponent implements OnInit, AfterViewInit {
     }
    }
 
+   @HostListener('window:resize')
+   onResize(){
+    const element=this.canvas.nativeElement as HTMLElement;
+    const height=element.parentElement!.parentElement!.offsetHeight -120;
+    const main=element.parentElement!.parentElement!.parentElement!.offsetWidth;
+    if(main < 900){
+      const width=main - 120;
+      element.setAttribute('width',width!.toString());
+    }
+    element.setAttribute('height',height!.toString());
+   }
+
   constructor(private socketWebService:SocketWebService) {
     this.width=800;
     this.height=800;

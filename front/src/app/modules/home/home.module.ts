@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './components/home/home.component';
 import { RoomComponent } from './components/room/room.component';
 import { DrawComponent } from './components/draw/draw.component';
-import { SocketWebService } from 'src/app/services/socketWeb/socket-web.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import { SocketWebService } from 'src/app/services/socketWeb/socket-web.service'
     DrawComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   providers:[]
 })

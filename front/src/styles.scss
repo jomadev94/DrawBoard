@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    background-image: url("/assets/background.jpg");
+    // background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}

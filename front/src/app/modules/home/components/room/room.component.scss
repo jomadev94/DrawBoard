@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    color: white;
+    padding-inline: 1rem;
+    height: 4rem;
+
+    h2{
+        font-size: 2rem;
+        margin-block: 1rem;
+        line-height: normal;
+    }
+}
+
+input{
+    padding: .5rem;
+    line-height: normal;
+
+    &:focus{
+        outline: none;
+        box-shadow: 0px 0px 9px 2px black;
+    }
+}
